@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="0 0 16 28">
+  <defs>
+    <!-- Bezel Gradient -->
+    <linearGradient id="swBezel0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4d6780"/>
+      <stop offset="50%" stop-color="#283a4a"/>
+      <stop offset="100%" stop-color="#15202a"/>
+    </linearGradient>
+
+    <!-- Lever Gradient -->
+    <linearGradient id="swLever0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d566e"/>
+      <stop offset="50%" stop-color="#22313f"/>
+      <stop offset="100%" stop-color="#121b24"/>
+    </linearGradient>
+
+    <!-- Lever Tip Highlight -->
+    <linearGradient id="swTip0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a9bb8"/>
+      <stop offset="100%" stop-color="#3a5166"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <rect x="1" y="2" width="14" height="25" rx="3" fill="#090d12" opacity="0.6"/>
+
+  <!-- Outer Bezel -->
+  <rect x="1" y="1" width="14" height="25" rx="3" fill="url(#swBezel0)" stroke="#101820" stroke-width="0.6"/>
+
+  <!-- Recessed Slot Track -->
+  <rect x="3.5" y="3.5" width="9" height="20" rx="2" fill="#0c1218" stroke="#1d2a36" stroke-width="0.5"/>
+
+  <!-- Lever Bat (Down Position - Off) -->
+  <rect x="4.5" y="12" width="7" height="10" rx="2" fill="url(#swLever0)" stroke="#0b1015" stroke-width="0.5"/>
+  <rect x="5.2" y="17" width="5.6" height="4" rx="1.5" fill="url(#swTip0)"/>
+  
+  <!-- Subtle Off Marker -->
+  <circle cx="8" cy="6.5" r="1.2" fill="#1e2c38"/>
+</svg>

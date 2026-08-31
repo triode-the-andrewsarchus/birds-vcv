@@ -13,3 +13,12 @@ results
 
 npm-debug.log
 node_modules
+
+# VCV Rack build artifacts
+build/
+dist/
+*.so
+*.dylib
+*.dll
+*.vcvplugin
+

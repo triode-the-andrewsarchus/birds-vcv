@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <!-- Hex Bezel Gold Gradient -->
+    <linearGradient id="hexGradOut" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5d7a6"/>
+      <stop offset="40%" stop-color="#d49b57"/>
+      <stop offset="100%" stop-color="#734f24"/>
+    </linearGradient>
+
+    <!-- Socket Recess Gradient -->
+    <radialGradient id="socketGradOut" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#080c10"/>
+      <stop offset="70%" stop-color="#141e28"/>
+      <stop offset="100%" stop-color="#3b2b1a"/>
+    </radialGradient>
+
+    <!-- Top Rim Highlight -->
+    <linearGradient id="rimHiOut" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Drop Shadow -->
+  <circle cx="12" cy="12.6" r="11" fill="#090e13" opacity="0.6"/>
+
+  <!-- Outer Hexagonal Bezel in Brass/Gold -->
+  <polygon points="12,1.5 21,6.7 21,17.3 12,22.5 3,17.3 3,6.7" fill="url(#hexGradOut)" stroke="#4a3114" stroke-width="0.8" stroke-linejoin="round"/>
+
+  <!-- Bezel Top Face Bevel -->
+  <polygon points="12,2.8 19.8,7.3 19.8,16.7 12,21.2 4.2,16.7 4.2,7.3" fill="none" stroke="url(#rimHiOut)" stroke-width="0.7"/>
+
+  <!-- Circular Outer Barrel -->
+  <circle cx="12" cy="12" r="8.2" fill="#241b14" stroke="#a3763f" stroke-width="0.7"/>
+
+  <!-- Gold Accent Ring -->
+  <circle cx="12" cy="12" r="7.2" fill="none" stroke="#e0a96d" stroke-width="0.7"/>
+
+  <!-- Deep Socket Hole -->
+  <circle cx="12" cy="12" r="6.0" fill="url(#socketGradOut)" stroke="#090e13" stroke-width="0.8"/>
+
+  <!-- Internal Ground Spring Contact Notch -->
+  <circle cx="12" cy="12" r="3.2" fill="#040608" stroke="#2b2014" stroke-width="0.5"/>
+  <path d="M 9.5 12 A 2.5 2.5 0 0 1 14.5 12" fill="none" stroke="#f5d7a6" stroke-width="0.7" stroke-linecap="round"/>
+</svg>

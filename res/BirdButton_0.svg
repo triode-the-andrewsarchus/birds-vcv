@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <!-- Outer Bezel Gradient -->
+    <linearGradient id="btnBezel0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#557391"/>
+      <stop offset="50%" stop-color="#2c4052"/>
+      <stop offset="100%" stop-color="#16222b"/>
+    </linearGradient>
+
+    <!-- Plunger Unpressed Gradient -->
+    <radialGradient id="btnPlunger0" cx="45%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#34495e"/>
+      <stop offset="70%" stop-color="#1b2632"/>
+      <stop offset="100%" stop-color="#0f161d"/>
+    </radialGradient>
+
+    <!-- Top Convex Highlight -->
+    <linearGradient id="btnHi0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <circle cx="10" cy="10.8" r="9" fill="#090d12" opacity="0.6"/>
+
+  <!-- Outer Bezel -->
+  <circle cx="10" cy="10" r="9" fill="url(#btnBezel0)" stroke="#111922" stroke-width="0.6"/>
+
+  <!-- Plunger Body (Raised) -->
+  <circle cx="10" cy="9.6" r="7.2" fill="url(#btnPlunger0)" stroke="#0d141b" stroke-width="0.5"/>
+
+  <!-- Convex Top Highlight -->
+  <path d="M 4.5 8.5 A 6.0 6.0 0 0 1 15.5 8.5 A 5.8 4.8 0 0 0 4.5 8.5 Z" fill="url(#btnHi0)"/>
+
+  <!-- Center Chirp Icon (Stylized beak/waves) -->
+  <circle cx="10" cy="9.6" r="3.2" fill="none" stroke="#99c1e2" stroke-width="0.8" opacity="0.85"/>
+  <circle cx="10" cy="9.6" r="1.4" fill="#99c1e2" opacity="0.9"/>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <!-- Outer Bezel Gradient -->
+    <linearGradient id="bezelGradMed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#557391"/>
+      <stop offset="50%" stop-color="#2c4052"/>
+      <stop offset="100%" stop-color="#16222b"/>
+    </linearGradient>
+
+    <!-- Knob Cap Gradient -->
+    <radialGradient id="capGradMed" cx="50%" cy="38%" r="52%">
+      <stop offset="0%" stop-color="#364c61"/>
+      <stop offset="65%" stop-color="#1c2834"/>
+      <stop offset="100%" stop-color="#0e161c"/>
+    </radialGradient>
+
+    <!-- Top Highlight -->
+    <linearGradient id="hiGradMed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Metallic Gold Accent for Preset / Main -->
+    <linearGradient id="pointerGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5d7a6"/>
+      <stop offset="100%" stop-color="#d49b57"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow Ring -->
+  <circle cx="14" cy="14.8" r="13" fill="#090d12" opacity="0.65"/>
+
+  <!-- Outer Bezel Ring -->
+  <circle cx="14" cy="14" r="13" fill="url(#bezelGradMed)" stroke="#111922" stroke-width="0.8"/>
+
+  <!-- Knurled Outer Edge -->
+  <circle cx="14" cy="14" r="12" fill="none" stroke="#21303e" stroke-width="1.0" stroke-dasharray="1.5,1.5"/>
+
+  <!-- Inner Recessed Step -->
+  <circle cx="14" cy="14" r="11" fill="#131c24"/>
+
+  <!-- Main Cap Body -->
+  <circle cx="14" cy="14" r="10.5" fill="url(#capGradMed)" stroke="#0c131a" stroke-width="0.6"/>
+
+  <!-- Top Convex Highlight Arc -->
+  <path d="M 5.5 12 A 9.5 9.5 0 0 1 22.5 12 A 9.2 8.0 0 0 0 5.5 12 Z" fill="url(#hiGradMed)"/>
+
+  <!-- Precision Pointer Indicator Notch (12 o'clock) -->
+  <rect x="13.1" y="2.5" width="1.8" height="7.5" rx="0.9" fill="#99c1e2"/>
+  <rect x="13.4" y="2.8" width="1.2" height="6.5" rx="0.6" fill="#ffffff" opacity="0.85"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <!-- Outer Bezel Gradient -->
+    <linearGradient id="btnBezel1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#48647f"/>
+      <stop offset="50%" stop-color="#243647"/>
+      <stop offset="100%" stop-color="#141d26"/>
+    </linearGradient>
+
+    <!-- Plunger Pressed Gradient (Recessed) -->
+    <radialGradient id="btnPlunger1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#182430"/>
+      <stop offset="70%" stop-color="#101820"/>
+      <stop offset="100%" stop-color="#090e13"/>
+    </radialGradient>
+
+    <!-- Glowing Cyan/Ice Blue Core -->
+    <radialGradient id="btnGlow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#aae0fa"/>
+      <stop offset="80%" stop-color="#5bbce4"/>
+      <stop offset="100%" stop-color="#207a9e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <circle cx="10" cy="10.4" r="9" fill="#090d12" opacity="0.4"/>
+
+  <!-- Outer Bezel -->
+  <circle cx="10" cy="10" r="9" fill="url(#btnBezel1)" stroke="#111922" stroke-width="0.6"/>
+
+  <!-- Plunger Body (Depressed) -->
+  <circle cx="10" cy="10.3" r="6.8" fill="url(#btnPlunger1)" stroke="#090d13" stroke-width="0.6"/>
+
+  <!-- Glow Halo -->
+  <circle cx="10" cy="10.3" r="5.5" fill="url(#btnGlow1)" opacity="0.8"/>
+
+  <!-- Illuminated Center Chirp Icon -->
+  <circle cx="10" cy="10.3" r="3.0" fill="none" stroke="#ffffff" stroke-width="0.9"/>
+  <circle cx="10" cy="10.3" r="1.5" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="380" viewBox="0 0 420 380">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22303e"/>
+      <stop offset="50%" stop-color="#2a3c4e"/>
+      <stop offset="100%" stop-color="#1b2632"/>
+    </linearGradient>
+
+    <!-- Card Gradient -->
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2530" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#131c25" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Header Gradient -->
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#18222b"/>
+      <stop offset="50%" stop-color="#233242"/>
+      <stop offset="100%" stop-color="#18222b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Panel Background -->
+  <rect width="420" height="380" fill="url(#bgGrad)"/>
+  
+  <!-- Outer Bevel Border -->
+  <rect x="1" y="1" width="418" height="378" fill="none" stroke="#435b75" stroke-width="1.5"/>
+  <rect x="3" y="3" width="414" height="374" fill="none" stroke="#101820" stroke-width="1"/>
+
+  <!-- Top Header Bar -->
+  <rect x="6" y="6" width="408" height="52" rx="4" fill="url(#headerGrad)" stroke="#3b526b" stroke-width="1"/>
+  
+  <!-- Module Title & Logo -->
+  <g id="header-branding">
+    <!-- Bird Icon Graphic -->
+    <path d="M 18 36 Q 26 20 40 24 Q 34 32 30 42 Q 22 40 18 36 Z" fill="#99c1e2" opacity="0.95"/>
+    <path d="M 30 28 Q 36 26 42 24 Q 37 31 33 34 Z" fill="#e0a96d"/>
+    <circle cx="26" cy="25" r="1.5" fill="#15202a"/>
+    
+    <text x="46" y="32" font-family="sans-serif" font-weight="900" font-size="18" fill="#eaf2f8" letter-spacing="2.5">BIRDS</text>
+    <text x="47" y="44" font-family="sans-serif" font-weight="bold" font-size="6.8" fill="#88abc9" letter-spacing="1">SYNTHESIZER</text>
+  </g>
+
+  <!-- Header Controls Labels -->
+  <text x="195" y="20" font-family="sans-serif" font-weight="bold" font-size="8" fill="#99c1e2" text-anchor="middle">PRESET</text>
+  <text x="245" y="20" font-family="sans-serif" font-weight="bold" font-size="8" fill="#99c1e2" text-anchor="middle">CHIRP</text>
+  <text x="305" y="20" font-family="sans-serif" font-weight="bold" font-size="8" fill="#99c1e2" text-anchor="middle">REPEAT</text>
+  <text x="365" y="20" font-family="sans-serif" font-weight="bold" font-size="8" fill="#99c1e2" text-anchor="middle">RATE</text>
+
+  <!-- Left Synthesis Matrix Section (Height 240, 5 even rows of 48px) -->
+  <rect x="8" y="62" width="212" height="240" rx="5" fill="url(#cardGrad)" stroke="#354a61" stroke-width="1"/>
+
+  <!-- Row 1: CARRIER & AMP (y: 62..110) -->
+  <text x="14" y="72" font-family="sans-serif" font-weight="bold" font-size="7" fill="#e0a96d" letter-spacing="1">CARRIER &amp; AMP</text>
+  <text x="38" y="91" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">IFRQ</text>
+  <text x="106" y="91" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">ATK</text>
+  <text x="174" y="91" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">DCY</text>
+  <line x1="14" y1="110" x2="212" y2="110" stroke="#263747" stroke-width="0.8" stroke-dasharray="2,2"/>
+  
+  <!-- Row 2: FM FREQUENCY (y: 110..158) -->
+  <text x="14" y="120" font-family="sans-serif" font-weight="bold" font-size="7" fill="#99c1e2" letter-spacing="1">FM FREQUENCY</text>
+  <text x="38" y="139" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">FMOD 1</text>
+  <text x="106" y="139" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">ATKF 1</text>
+  <text x="174" y="139" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">DCYF 1</text>
+  <line x1="14" y1="158" x2="212" y2="158" stroke="#263747" stroke-width="0.8" stroke-dasharray="2,2"/>
+
+  <!-- Row 3: AM FREQUENCY (y: 158..206) -->
+  <text x="14" y="168" font-family="sans-serif" font-weight="bold" font-size="7" fill="#99c1e2" letter-spacing="1">AM FREQUENCY</text>
+  <text x="38" y="187" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">FMOD 2</text>
+  <text x="106" y="187" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">ATKF 2</text>
+  <text x="174" y="187" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">DCYF 2</text>
+  <line x1="14" y1="206" x2="212" y2="206" stroke="#263747" stroke-width="0.8" stroke-dasharray="2,2"/>
+
+  <!-- Row 4: FM GAIN (y: 206..254) -->
+  <text x="14" y="216" font-family="sans-serif" font-weight="bold" font-size="7" fill="#99c1e2" letter-spacing="1">FM GAIN (DEPTH)</text>
+  <text x="38" y="235" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">AMOD 1</text>
+  <text x="106" y="235" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">ATKA 1</text>
+  <text x="174" y="235" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">DCYA 1</text>
+  <line x1="14" y1="254" x2="212" y2="254" stroke="#263747" stroke-width="0.8" stroke-dasharray="2,2"/>
+
+  <!-- Row 5: AM GAIN (y: 254..302) -->
+  <text x="14" y="264" font-family="sans-serif" font-weight="bold" font-size="7" fill="#99c1e2" letter-spacing="1">AM GAIN (DEPTH)</text>
+  <text x="38" y="283" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">AMOD 2</text>
+  <text x="106" y="283" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">ATKA 2</text>
+  <text x="174" y="283" font-family="sans-serif" font-weight="bold" font-size="6.5" fill="#b0cde6" text-anchor="end">DCYA 2</text>
+
+  <!-- Right Flock & Generative Section (y: 62..302, width 184 px) -->
+  <rect x="228" y="62" width="184" height="240" rx="5" fill="url(#cardGrad)" stroke="#354a61" stroke-width="1"/>
+  <text x="238" y="75" font-family="sans-serif" font-weight="bold" font-size="7.5" fill="#e0a96d" letter-spacing="1">FLOCK &amp; GENERATIVE</text>
+
+  <!-- Flock Knobs Labels -->
+  <text x="268" y="124" font-family="sans-serif" font-weight="bold" font-size="7" fill="#b0cde6" text-anchor="middle">VOICES</text>
+  <text x="356" y="124" font-family="sans-serif" font-weight="bold" font-size="7" fill="#b0cde6" text-anchor="middle">PITCH JIT</text>
+
+  <text x="268" y="194" font-family="sans-serif" font-weight="bold" font-size="7" fill="#b0cde6" text-anchor="middle">TIME SPREAD</text>
+  <text x="356" y="194" font-family="sans-serif" font-weight="bold" font-size="7" fill="#b0cde6" text-anchor="middle">PAN SPREAD</text>
+
+  <text x="268" y="264" font-family="sans-serif" font-weight="bold" font-size="7" fill="#b0cde6" text-anchor="middle">TIME JIT</text>
+  <text x="356" y="264" font-family="sans-serif" font-weight="bold" font-size="7" fill="#b0cde6" text-anchor="middle">ENV SPREAD</text>
+
+  <!-- Bottom Jack Bay Section (y: 306..364) -->
+  <rect x="8" y="306" width="404" height="58" rx="5" fill="#131c25" stroke="#314457" stroke-width="1"/>
+
+  <!-- Jack Grouping Headers -->
+  <text x="130" y="316" font-family="sans-serif" font-weight="bold" font-size="6.8" fill="#88abc9" text-anchor="middle" letter-spacing="1">CONTROL VOLTAGE INPUTS</text>
+  <text x="345" y="316" font-family="sans-serif" font-weight="bold" font-size="6.8" fill="#e0a96d" text-anchor="middle" letter-spacing="1">OUTPUTS</text>
+
+  <!-- Jack Labels -->
+  <text x="34" y="356" font-family="sans-serif" font-weight="bold" font-size="6.8" fill="#eaf2f8" text-anchor="middle">TRIG</text>
+  <text x="72" y="356" font-family="sans-serif" font-weight="bold" font-size="6.8" fill="#eaf2f8" text-anchor="middle">V/OCT</text>
+  <text x="110" y="356" font-family="sans-serif" font-weight="bold" font-size="6.8" fill="#eaf2f8" text-anchor="middle">FM CV</text>
+  <text x="148" y="356" font-family="sans-serif" font-weight="bold" font-size="6.8" fill="#eaf2f8" text-anchor="middle">AM CV</text>
+  <text x="186" y="356" font-family="sans-serif" font-weight="bold" font-size="6.8" fill="#eaf2f8" text-anchor="middle">RATE</text>
+  <text x="224" y="356" font-family="sans-serif" font-weight="bold" font-size="6.8" fill="#eaf2f8" text-anchor="middle">SPREAD</text>
+
+  <!-- Divider between inputs and outputs -->
+  <line x1="254" y1="309" x2="254" y2="359" stroke="#314457" stroke-width="1"/>
+
+  <text x="282" y="356" font-family="sans-serif" font-weight="bold" font-size="6.8" fill="#e0a96d" text-anchor="middle">ENV</text>
+  <text x="328" y="356" font-family="sans-serif" font-weight="bold" font-size="6.8" fill="#e0a96d" text-anchor="middle">OUT L</text>
+  <text x="372" y="356" font-family="sans-serif" font-weight="bold" font-size="6.8" fill="#e0a96d" text-anchor="middle">OUT R</text>
+</svg>

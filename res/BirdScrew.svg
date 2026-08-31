@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <defs>
+    <!-- Screw Head Gradient -->
+    <radialGradient id="screwHeadGrad" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#55708a"/>
+      <stop offset="55%" stop-color="#2c3e4f"/>
+      <stop offset="100%" stop-color="#141d26"/>
+    </radialGradient>
+
+    <!-- Torx / Hex Drive Recess -->
+    <radialGradient id="driveGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#040608"/>
+      <stop offset="100%" stop-color="#121a22"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <circle cx="7.5" cy="8.0" r="6.8" fill="#090d12" opacity="0.6"/>
+
+  <!-- Screw Outer Rim -->
+  <circle cx="7.5" cy="7.5" r="6.8" fill="url(#screwHeadGrad)" stroke="#10171f" stroke-width="0.6"/>
+
+  <!-- Chamfered Edge Highlight -->
+  <circle cx="7.5" cy="7.5" r="5.8" fill="none" stroke="#6887a6" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Recessed Torx / Star Drive Socket -->
+  <!-- 6-point star/hex shape -->
+  <polygon points="7.5,3.6 8.6,5.3 10.6,5.3 9.6,7.0 10.6,8.7 8.6,8.7 7.5,10.4 6.4,8.7 4.4,8.7 5.4,7.0 4.4,5.3 6.4,5.3" fill="url(#driveGrad)" stroke="#0b1015" stroke-width="0.4" stroke-linejoin="round"/>
+  
+  <!-- Subtle Internal Highlight Edge -->
+  <circle cx="7.5" cy="7.5" r="1.4" fill="#1b2834" opacity="0.8"/>
+</svg>

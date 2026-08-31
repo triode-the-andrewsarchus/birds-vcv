@@ -1,0 +1,29 @@
+{
+  "slug": "Birds",
+  "name": "Birds",
+  "version": "2.0.0",
+  "license": "GPL-3.0-or-later",
+  "brand": "Birds",
+  "author": "Vega",
+  "authorEmail": "",
+  "authorUrl": "",
+  "pluginUrl": "https://github.com/notthetup/birds",
+  "manualUrl": "",
+  "sourceUrl": "https://github.com/notthetup/birds",
+  "donateUrl": "",
+  "changelogUrl": "",
+  "modules": [
+    {
+      "slug": "Birds",
+      "name": "Birds",
+      "description": "AM/FM Birdcall Synthesis & Flock Generator",
+      "tags": [
+        "Synthesizer",
+        "Physical modeling",
+        "FM",
+        "Voice",
+        "Polyphonic"
+      ]
+    }
+  ]
+}
